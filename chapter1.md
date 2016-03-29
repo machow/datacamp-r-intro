@@ -53,10 +53,11 @@ zipcode <- c(0, 8, 5, 4, 0)
 # Test whether the function str is called with the correct argument, object
 # If it is not called, print something informative
 # If it is called, but called incorrectly, print something else
-test_function("c", args="...",
+test_function("c",
                 not_called_msg = "you didn't call `c()`!",
-                incorrect_msg = "you need to give `c()` some arguments"
 )
+
+
 
 # Test the object, good_movies
 # Notice that we didn't define any feedback here, this will cause automatically 
