@@ -5,6 +5,9 @@ description : Something about variables and data structures
 attachments :
   slides_link : https://dl.dropboxusercontent.com/u/22292695/0c-rbasics.pdf
 
+--- type:VideoExercise lang:r xp:50 skills:1
+## Install R and Rstudio
+
 *** =video_link
 //player.vimeo.com/video/160766949
 
