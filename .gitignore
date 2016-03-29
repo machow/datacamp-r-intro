@@ -1,0 +1,7 @@
+# R specific
+.Rproj.user
+.Rhistory
+.RData
+
+# Vim specific
+.*.swp
