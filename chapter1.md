@@ -277,7 +277,7 @@ x[3]
 
 test_function("[", 
                     not_called_msg = "you can index using blocks, e.g. `x[a_number]`",
-                    incorrect_msg = "it looks like you indexed an item, but not the third one")
+                    incorrect_msg = "it looks like you indexed an item, but not the third one"
 )
 
 test_error()
