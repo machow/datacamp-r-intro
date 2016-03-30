@@ -97,7 +97,8 @@ zip_class <- class(zipcode)
 *** =sct
 ```{r}
 
-test_function("class", not_called_msg = "you didn't call the `class` function!",
+test_function("class", args = "x",
+                       not_called_msg = "you didn't call the `class` function!",
                        incorrect_msg = "did you pass `zipcode` to the `class` function?"
 
 )
