@@ -251,7 +251,7 @@ success_msg("Good work!")
 Grab the third element of `x`
 
 *** =hint
-- you can index using the brackets, e.g. `x[a_number]`
+- you can index using the blocks, e.g. `x[a_number]`
 
 *** =sample_code
 ```{r}
@@ -275,10 +275,7 @@ x[3]
 *** =sct
 ```{r}
 
-test_function("[", 
-                    not_called_msg = "you can index using blocks, e.g. `x[a_number]`",
-                    incorrect_msg = "it looks like you indexed an item, but not the third one"
-)
+test_student_typed("x[3]", not_typed_msg = "try using something like `x[a_number]`")
 
 test_error()
 
