@@ -148,6 +148,52 @@ success_msg("Good work!")
 ```
 
 
+--- type:NormalExercise lang:r xp:100 skills:1
+## Combining words together
 
+Use the function we discussed to combine the strings "R" and "markdown" into a single string.
+
+*** =instructions
+- more instructions here
+
+*** =hint
+- look back on the notes for the `paste` function
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+a <- "R"
+b <- "markdown"
+
+```
+
+*** =solution
+```{r}
+
+a <- "R"
+b <- "markdown"
+
+paste(a, b)
+
+```
+
+*** =sct
+```{r}
+
+test_function("paste", not_called_msg = "Be sure to use the `paste` function",
+                       incorrect_msg = "You used the right function, did you give it 'R' and 'markdown'?"
+
+)
+
+test_error()
+
+# Final message the student will see upon completing the exercise
+success_msg("Good work!")
+```
 
 
