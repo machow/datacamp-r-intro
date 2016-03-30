@@ -103,6 +103,10 @@ test_function("class", args = "x",
 
 )
 
+test_an_object(zip_class,
+    incorrect_msg = "did you assign the variable `zip_class`?"
+)
+
 test_error()
 
 # Final message the student will see upon completing the exercise
@@ -197,4 +201,88 @@ test_error()
 success_msg("Good work!")
 ```
 
+
+
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## Vector (2)
+
+Give this vector entries named "a", "b", and "c".
+
+
+*** =instructions
+- The entries can be anything you want.
+
+*** =hint
+- pass named arguments to `c`, like `c(first_name=1)`
+
+*** =sample_code
+```{r}
+
+x <- c(1,2,3)
+
+```
+
+*** =solution
+```{r}
+
+x <- c(a=1, b=2, c=3)
+
+```
+
+*** =sct
+```{r}
+
+test_object("x", 
+    undefined_msg = "did you delete `x`?",
+    incorrect_msg = "try passing named arguments to `c`, like the second part of `log(2, base=10)`"
+)
+
+test_error()
+
+# Final message the student will see upon completing the exercise
+success_msg("Good work!")
+```
+
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## Indexing (1)
+
+Grab the third element of `x`
+
+*** =hint
+- you can index using the brackets, e.g. `x[a_number]`
+
+*** =sample_code
+```{r}
+
+x <- 11:15
+
+# put code below
+
+```
+
+*** =solution
+```{r}
+
+x <- 11:15
+
+# put code below
+x[3]
+
+```
+
+*** =sct
+```{r}
+
+test_function("[", 
+                    not_called_msg = "you can index using blocks, e.g. `x[a_number]`",
+                    incorrect_msg = "it looks like you indexed an item, but not the third one")
+)
+
+test_error()
+
+# Final message the student will see upon completing the exercise
+success_msg("Good work!")
+```
 
