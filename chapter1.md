@@ -11,10 +11,13 @@ attachments :
 *** =video_link
 //player.vimeo.com/video/160766949
 
+
+
+
 --- type:NormalExercise lang:r xp:100 skills:1
 ## Vector basics (1)
 
-Create a vector named "zip" with 5 elements, each one a digit of Princeton's zip code (08540)
+Create a vector named "zipcode" with 5 elements, each one a digit of Princeton's zip code (08540)
 
 *** =instructions
 - more instructions here
@@ -46,29 +49,105 @@ zipcode <- c(0, 8, 5, 4, 0)
 
 *** =sct
 ```{r}
-# The sct section defines the Submission Correctness Tests (SCTs) used to
-# evaluate the student's response. All functions used here are defined in the 
-# testwhat R package. Documentation can also be found at github.com/datacamp/testwhat/wiki
 
-# Test whether the function str is called with the correct argument, object
-# If it is not called, print something informative
-# If it is called, but called incorrectly, print something else
-test_function("c",
-                not_called_msg = "you didn't call `c()`!",
-)
+test_function("c", not_called_msg = "you didn't call the `c()` function!")
 
-
-
-# Test the object, good_movies
-# Notice that we didn't define any feedback here, this will cause automatically 
-# generated feedback to be given to the student in case of an incorrect submission
 test_object("zipcode")
 
-# It's always smart to include the following line of code at the end of your SCTs
-# It will check whether executing the student's code resulted in an error, 
-# and if so, will cause the exercise to fail
 test_error()
 
 # Final message the student will see upon completing the exercise
 success_msg("Good work!")
 ```
+
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## Functions (1)
+
+Check the class of "zipcode", and assign it to the variable `zip_class`.
+
+*** =instructions
+- more instructions here
+
+*** =hint
+- `zip_class <- ` is the beginning of assigning a variable
+- use the `class` function
+
+*** =pre_exercise_code
+```{r}
+
+```
+
+*** =sample_code
+```{r}
+
+zipcode <- 83201
+
+```
+
+*** =solution
+```{r}
+
+zipcode <- 83201
+
+zip_class <- class(zipcode)
+
+```
+
+*** =sct
+```{r}
+
+test_function("class", not_called_msg = "you didn't call the `class` function!",
+                       incorrect_msg = "did you pass `zipcode` to the `class` function?"
+
+)
+
+test_error()
+
+# Final message the student will see upon completing the exercise
+success_msg("Good work!")
+```
+
+
+--- type:NormalExercise lang:r xp:100 skills:1
+## Strings
+
+Write the string `Strings have "quotes" around them`
+
+*** =instructions
+- more instructions here
+
+*** =hint
+- Remember that there are two ways to write strings.
+
+*** =sample_code
+```{r}
+
+
+```
+
+*** =solution
+```{r}
+
+'Strings have "quotes" around them'
+
+
+```
+
+*** =sct
+```{r}
+
+test_output_contains('"quotes"', 
+    incorrect_msg="string does not match"
+)
+
+test_error()
+
+# Final message the student will see upon completing the exercise
+success_msg("Good work!")
+```
+
+
+
+
+
